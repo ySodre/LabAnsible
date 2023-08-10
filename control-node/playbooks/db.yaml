@@ -4,7 +4,7 @@
 
   user: vagrant
   become: yes
-  var_files:
+  vars_files:
     - vars/main.yml
   vars:
     - dbname: "db01"
@@ -20,3 +20,6 @@
   roles:
     - configuracao-default-so
     - role: geerlingguy.mysql
+
+
+    Teste2
