@@ -14,9 +14,9 @@
     - name: Configurar hosts lab ansible
       lineinfile: line "{{item}} path=/etc/hosts"
       with_items:
-        - 192.168.1.201 control-node
-        - 192.168.1.202 db01
-        - 192.168.1.203 app01
+        - 192.168.99.8 control-node
+        - 192.168.99.7 db01
+        - 192.168.99.6 app01
   roles:
     - configuracao-default-so
     - role: geerlingguy.mysql
